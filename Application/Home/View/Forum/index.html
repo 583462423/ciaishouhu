@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="renderer" content="webkit">
+    <title>瓷爱天使守护团</title>
+
+    <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/Index/main.css" rel="stylesheet">	
+    <link href="__PUBLIC__/Css/footer.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/Forum/index.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/bootstrapValidator.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Editor/themes/default/default.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Editor/plugins/code/prettify.css" />
+</head>
+
+<body style="background-color: #ccc;">
+
+<form class="form-horizontal send_form" id="sendForm" role="form" action="{:U('Home/Forum/send')}">
+
+
+  <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+        <p><b>请输入发帖内容</b></p>
+        </div>
+          
+        <div class="modal-body forum_body">
+          <div class="form-group">
+          <p><b>主题</b></p>
+          <select  class="form-control" id="selectAge" name="subject">   
+                <option value="心情分享">心情分享</option>   
+                <option value="你问我答">你问我答</option>   
+                <option value="生活技能">生活技能</option>   
+                <option value="病症咨询">病症咨询</option>   
+                <option value="政策解读">政策解读</option>   
+                <option value="社区畅聊">社区畅聊</option>
+             </select>   
+        </div>
+          <div class="form-group">
+            <p><b>标题</b></p>
+            <input type="text" class="form-control" placeholder="请输入您的标题，50字以内" name="title" />
+          </div>
+          <div class="form-group">
+            <p><b>内容</b></p>
+            <textarea id="" class="form-control" raw="8" name="content" style="height:100px;resize: none;"></textarea>
+          </div>
+
+          <div class="word_surplus"></div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default close_btn" data-dismiss="modal">关闭</button>
+          <button type="submit" class="btn btn-primary send">发送</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+    <include file="./Public/Html/head.html" />
+    <div class="container">
+      <div class="mainforum row">
+        <div class="left col-md-8">
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="{:U('Home/Forum/index')}">首页</a></li>
+                    <li><a href="{:U('Home/Forum/recommend')}">推荐</a></li>
+                    <li><a href="{:U('Home/Forum/hot')}">热门</a></li>
+                </ul>
+
+                <button class="post">发帖</button>
+            </div>
+            <div class="main">
+                <volist name="list" id="vo" empty="暂时没有数据" >
+                    <li class="main_li"><a class="item_title">{$vo.subject}</a> <a class="main_a" href="{:U('Home/Forum/foruminfo')}?id={$vo.id}">{$vo.title} <span>{$vo.senddate}</span></a></li><hr>   
+                </volist>
+              <div style="text-align: center;">{$pageshow}</div>
+            </div>
+        </div>
+        <div class="right col-md-3">
+          <div class="notice">
+              <h4><b>公告</b></h4>
+              <h5><b>{$notice.title}</b></h5>
+              <p>{$notice.info}</p>
+            </div>
+            <div class="hot_part">
+              <h4><b>热门板块</b></h4>
+                <a>社区畅聊</a>
+                <a>心情分享</a>
+                <a>你问我答</a>
+                <a>生活技能</a>
+                <a>病症咨询</a>
+                <a>政策解读</a>
+            </div>
+            <hr>
+            <div class="weixin">
+              <h4><b>微信公众号</b></h4>
+                <img src="__PUBLIC__/Img/cixiaoai.png" style="width:100%;"/>
+            </div>
+        </div>
+      </div>
+    </div>
+    <include file="./Public/Html/footer.html" />
+
+  	<script src="__PUBLIC__/Js/jquery.min.js"></script>
+  	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/Js/bstraplang/zh_CN.js"></script>
+    <script src="__PUBLIC__/Js/bootstrapValidator.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/Editor/kindeditor.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/Editor/lang/zh_CN.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/Editor/plugins/code/prettify.js"></script>
+  	<script type="text/javascript">
+
+     // KindEditor.ready(function(K) {
+     //            var editor = K.create('#editor_id',{
+     //              cssPath : '__PUBLIC__/Editor/plugins/code/prettify.css',
+     //              width:"100%",
+     //              height:'200px',
+     //              items:[
+     //                   'emoticons'
+     //                  ],
+     //              afterChange:function() {
+     //                 $('.word_count1').html(this.count()); //字数统计包含HTML代码
+     //                 $('.word_count2').html(this.count('text'));  //字数统计包含纯文本、IMG、EMBED，不包含换行符，IMG和EMBED算一个文字
+     //                 var limitNum = 100;  //设定限制字数
+     //                 var pattern = '还可以输入' + limitNum + '字'; 
+     //                 $('.word_surplus').html(pattern); //输入显示
+     //                 if(this.count('text') > limitNum) {
+
+     //                  $('button.send').addClass("disabled");
+     //                  pattern = ('字数超过限制，请适当删除部分内容');
+     //                  //超过字数限制自动截取
+     //                  var strValue = editor.text();
+     //                  strValue = strValue.substring(0,limitNum);
+     //                  editor.text(strValue);  
+     //                  } else {
+
+     //                  //计算剩余字数
+     //                  var result = limitNum - this.count('text'); 
+     //                  pattern = '还可以输入' +  result + '字'; 
+     //                  }
+
+     //                  $('.word_surplus').html(pattern); //输入显示
+     //                 ////////
+     //                } 
+                  
+
+     //                  /*'preview', 
+     //                  'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+     //                  'justifyfull',   'indent', 'outdent', 
+     //                  '|', 'fullscreen', 'image', 'multiimage','/',
+     //                  'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+     //                  'italic', 'underline',  'lineheight',  '|',  
+     //                 'hr', 'emoticons', 'baidumap'*/
+     //            });
+     //            prettyPrint();
+     //  });
+
+     $(document).ready(function() {
+
+        $('button.post').click(function(){
+            $('#myModal').modal({
+              show:true,
+              keyboard:false,
+              backdrop:'static'
+            });
+        });
+
+
+        $('#sendForm')
+            .bootstrapValidator({
+                    live:'disabled',  
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    title: {
+                        message: '请输入标题',
+                            threshold: 6,
+                        validators: {
+                            notEmpty: {
+                                message: '请输入标题'
+                            },
+                            stringLength: {
+                                max: 50,
+                                message: '标题长度最多50字'
+                            }
+                        }
+                  },
+                  content:{
+                    message: '请输入内容',
+                            threshold: 6,
+                        validators: {
+                            notEmpty: {
+                                message: '请输入内容'
+                            },
+                            stringLength: {
+                                max: 500,
+                                message: '内容超过500字，过长，请修改'
+                            }
+                        }
+                  }
+              }
+          })
+          .on('success.form.bv', function(e) {
+              // Prevent form submission
+              e.preventDefault();
+              $('button.close_btn').addClass('disabled');
+              $('button.send').addClass('disabled');
+
+              // Get the form instance
+              var $form = $(e.target);
+              // Get the BootstrapValidator instance
+              var bv = $form.data('bootstrapValidator');
+              // Use Ajax to submit form data
+
+              $.post($form.attr('action'), $form.serialize(), function(result) {
+                  if(result == 1){
+                      
+                      $('.word_surplus').html('发帖成功！');
+                      setTimeout(function(){
+                        $('#myModal').modal({
+                        show:false,
+                      });
+                      window.location.href="/index.php/Home/Forum/index.html";
+                      },500);        
+                  }else if(result == 2)
+                  {
+                    alert('请先登录！');
+                    window.location.href="/index.php/Home/Login/login.html";
+                  }
+                  else{
+                      $('button.close_btn').removeClass('disabled');
+                      $('button.send').removeClass('disabled');
+                      alert(result);
+                  }
+              });
+          });
+     });
+    </script>
+</body>
+</html>

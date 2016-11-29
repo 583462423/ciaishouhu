@@ -1,0 +1,146 @@
+.mainforum{
+}
+.left{
+    display: inline-block;
+}
+
+.post{
+    float:right;
+    font-family: '微软雅黑';
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    margin-top:-3px;
+    margin-right: 5px;
+    padding:5px 20px 5px 20px;
+    background-color: #FC6D6D;
+    border:none;
+}
+
+.left .menu{
+    height:50px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.left .main{
+    height:750px;
+    background-color: rgb(255,255,255); 
+    margin-bottom: 20px;
+    margin-top:20px;
+    padding-top:15px;
+}
+
+.left .reply_main{
+    padding-top:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+     
+}
+.right{
+    margin-left: 20px;
+    margin-right: 20px;
+    height:800px;
+    background-color: rgb(255,255,255);
+    margin-bottom: 20px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    float:left;
+    margin-left: 10px;
+    margin-top:10px;
+    font-family: '微软雅黑';
+    font-size: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
+
+.active{
+    border-bottom: 2px solid rgba(255,0,0,0.5);
+}
+
+
+.post:hover{
+    color:white;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px #222222;
+}
+
+.forum_body{
+    width:80%;
+    margin:0 auto;
+}
+
+.word_surplus{
+    color:red;
+    font-size:15px;
+}
+
+
+.main_li{
+    list-style: none;
+    height:30px;
+    line-height: 30px;/*这个要和height一致，才能上下垂直居中*/
+    margin:10px 20px;
+    clear:all;
+}
+
+
+.item_title{
+    font-size: 14px;
+    border-radius: 0px;
+    padding:8px;
+    background: #FC6D6D;
+    color:white;
+}
+
+.main_a{
+    color:black;
+    font-size:16px;
+    margin-left: 10px;
+}
+
+.main_a span{
+    float: right;
+    color:#aaa;
+    font-size: 14px;
+
+}
+
+
+.reply_li{
+}
+
+.main_info{
+    padding:20px;
+    margin-top:8px;
+    background-color: rgb(255,255,255);
+}
+
+.hot_part a{
+    color:white;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+    background-color:#EE6183;
+    margin-bottom: 2px;
+}
+
+
+.notice{
+    border:1px solid #EE6183;
+    margin-top: 10px;
+    padding:5px;
+    background-color: #EE6183;
+    box-shadow: 0px 0px 10px #EE6183;
+}

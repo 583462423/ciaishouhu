@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>瓷爱助残</title>
+  
+  <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/Teach/course.css" rel="stylesheet">	
+  <link href="__PUBLIC__/Css/footer.css" rel="stylesheet">
+   <link href="__PUBLIC__/Css/base.css" rel="stylesheet">
+</head>
+
+<body>
+
+<include file="./Public/Html/head.html" />
+
+
+<div class="container" style="height:600px">
+  <div class="btns">
+    <a class="active" href="{:U('Home/Teach/smallcourse')}">小学</a>
+    <a class="noactive" href="{:U('Home/Teach/middlecourse')}">初中</a>
+  </div>
+
+      <ul class="smasch">
+       <volist name="small_list" id="vo" empty="暂时没有数据" >
+          <li><a href="{$vo.booklink}"><span class="course_title">{$vo.subject}</span>{$vo.grade}--------{$vo.bookname}</a></li>      
+      </volist>
+      </ul>
+      <div style="clear:both;text-align: center;position: relative;top:30px">{$small_page}</div>
+
+  </div>
+
+</div>
+
+
+  <include file="./Public/Html/footer.html" />
+	<script src="__PUBLIC__/Js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
+	<script src="__PUBLIC__/Js/bstraplang/zh_CN.js"></script>
+</body>
+</html>

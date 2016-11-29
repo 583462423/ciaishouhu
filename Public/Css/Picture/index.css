@@ -1,0 +1,14 @@
+body{
+    background-color: #ddd;
+}
+
+.info{
+    background-color: #fff;
+    border:10px solid #ddd;
+    padding:20px;
+}
+
+.info_img{
+    height:440px;
+    width:100%;
+}

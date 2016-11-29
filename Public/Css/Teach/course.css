@@ -1,0 +1,56 @@
+body,html{
+	background-color: #ddd;
+}
+
+.smasch{
+	list-style: none;
+}
+.smasch li{
+	height: 50px;
+	background-color: #fff;
+	padding-left: 20px;
+	line-height: 50px;
+	margin-bottom: 5px;
+
+}
+.smasch li a{
+	text-decoration: none;
+	color:black;
+}
+
+.smasch li a:hover{
+	color:#FB6C6D;
+}
+
+
+.btns{
+	text-align: center;
+	margin-bottom:20px;
+}
+
+.btns a{
+	cursor: pointer;
+	margin-right:-4px;
+	display: inline-block;
+	width:80px;
+	height:30px;
+	font-size: 18px;
+	padding:2px;
+	color:white;
+}
+
+.active{
+	box-shadow: 0px 0px 8px rgba(23,42,25,0.5);
+	background-color: #FB6C6D;
+}
+
+.noactive{
+	background-color: #CB7C61;
+}
+
+.course_title{
+	background-color: #FB6C6D;
+	padding:5px 10px 5px 10px;
+	margin-right: 10px;
+	color:white;
+}

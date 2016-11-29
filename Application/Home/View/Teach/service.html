@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>瓷爱助残</title>
+  
+  <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/Teach/service.css" rel="stylesheet">	
+  <link href="__PUBLIC__/Css/footer.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/base.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/bootstrapValidator.css" rel="stylesheet">
+</head>
+
+<body>
+
+<include file="./Public/Html/head.html" />
+
+<div class="container">
+
+    <div class="mainbody">
+
+      <div class="showdes">
+
+        <h1>上门服务 </h1>
+        <p style="font-size:18px;">对接大学生等优质志愿者资源，为肢残青少年群体提供贴心的上门教育服务和心理关怀</p>
+        <span style="font-size: 30px; background-color:rgba(238,97,131,0.7);padding:5px">如果您需要该服务，请填写下表并提交~</span>
+      </div>
+      <div class="describ"> 
+    
+          <div class="cin">
+            <form class="form-horizontal sub_form" id="subForm" role="form" action="{:U('Home/Teach/subInfo')}">
+              <div class="form-group">
+                <p><b>姓名</b></p>
+                <input type="text" class="form-control " placeholder="请输入您的姓名" name="name" />
+              </div>
+            
+              <div class="form-group">
+                  <p><b>年龄</b></p>
+                  <input type="text" class="form-control age" placeholder="请输入您的年龄" name="age" /><b>&nbsp;&nbsp;岁</b>
+              </div>
+
+              <div class="form-group">
+                  <p><b>文化水平</b>></p>
+                   <select  class="form-control"  name="grade">   
+                    <option value="小学">小学</option>   
+                    <option value="初中">初中</option>   
+                    <option value="高中">高中</option>   
+
+                 </select>   
+               </div>
+
+               <div class="form-group">
+                  <p><b>QQ</b></p>
+                    <input type="text" class="form-control"  placeholder="请输入QQ" name="qq">
+               </div>
+
+               <div class="form-group">
+                  <p><b>电话</b></p>
+                    <input type="text" class="form-control"  placeholder="请输入您的手机号" name="phoneNumber">
+               </div>
+
+               <div class="form-group">
+                  <p><b>家庭住址</b></p>
+                    <input type="text" class="form-control address province"  placeholder="省份" name="province">
+                    <input type="text" class="form-control address country"  placeholder="县(市)" name="country">
+                    <input type="text" class="form-control address village"  placeholder="镇(村/街道)" name="village">
+               </div>
+              
+
+               <div class="form-group" style="margin-top:30px;">
+                    <button type="submit" class="btn btn-warning" style="width:100%">上传</button>
+                </div>
+
+          </form>
+          </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+  <include file="./Public/Html/footer.html" />
+	<script src="__PUBLIC__/Js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
+	<script src="__PUBLIC__/Js/bstraplang/zh_CN.js"></script>
+  <script src="__PUBLIC__/Js/bootstrapValidator.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#subForm')
+          .bootstrapValidator({
+            live:'disabled', 
+              message: 'message',
+              feedbackIcons: {
+                  valid: 'glyphicon glyphicon-ok',
+                  invalid: 'glyphicon glyphicon-remove',
+                  validating: 'glyphicon glyphicon-refresh'
+              },
+              fields: {
+                  name: {
+                      message: 'usernamemessage',
+                      validators: {
+                          notEmpty: {
+                              message: '名字不能为空哦~'
+                          },
+                          stringLength: {
+                              max: 6,
+                              message: '如实回答哦小朋友~'
+                          }
+                      }
+                  },
+                  age: {
+
+                      validators: {
+                          notEmpty: {
+                              message: '请告诉我您的年龄~'
+                          },
+                          regexp: {
+                              regexp: /^[0-9]+$/,
+                              message: '请使用小数字哦，如：13，不要写13岁，也不要写“十三”或“十三岁”~'
+                          }
+                      }
+                  },
+                  province:{
+                    validators: {
+                          notEmpty: {
+                              message: '记得填写省份哦~'
+                        }
+                      }
+                  },
+                  country:{
+                    validators: {
+                          notEmpty: {
+                              message: '还要填写县区哦~'
+                        }
+                      }
+                  },
+                  village:{
+                    validators: {
+                          notEmpty: {
+                              message: '不要忘了镇村信息，不然怎么找到您呢？~'
+                        }
+                      }
+                  },
+
+              }
+          })
+          .on('success.form.bv', function(e) {
+                    // Prevent form submission
+                    e.preventDefault();
+
+                    // Get the form instance
+                    var $form = $(e.target);
+                    // Get the BootstrapValidator instance
+                    var bv = $form.data('bootstrapValidator');
+                    // Use Ajax to submit form data
+
+                    $.post($form.attr('action'), $form.serialize(), function(result) {
+                        alert(result);
+                    });
+            });
+
+      });
+  </script>
+</body>
+</html>

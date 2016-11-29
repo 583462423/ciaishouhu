@@ -1,0 +1,83 @@
+
+
+<!doctype>
+<html>
+    
+
+
+    <head>
+
+    <style text="text/css">
+
+        .all:after{
+            clear:both;
+            display:block;
+            overflow: hidden;
+            content:"";
+            height:300px;
+        }
+    
+        .fliped,.card{
+            margin:0;
+            padding:0;
+            perspective:1000px;
+        }
+        .face{
+            display: block;
+            margin:0 auto;
+            width:200px;
+            height:200px;
+            background-color: red;
+            transition: all .5s;
+            backface-visibility:hidden;
+        }
+
+        .back{
+            background-color: black;
+            transform: translateY(-220px) rotate3d(0,1,0,180deg);
+        }
+        .fliped{
+            margin:0;
+            padding:0;
+        }
+
+        .fliped .front{
+            transform:rotate3d(0,1,0,180deg);
+        }
+
+        .fliped .back{
+            transform: translateY(-215px) rotate3d(0,1,0,360deg);
+        }
+
+    </style>
+    </head>
+
+
+    <body>
+    <div class="all">
+        <div class="card">
+            <div class="face front">
+                <p>afasdf</p>
+            </div>
+
+            <div class="face back">
+                <p>hehehe</p>
+            </div>
+        </div>
+    </div>
+    </body>
+<script type="text/javascript" src="jquery.min.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".card").hover(function(){
+        $(".card").addClass("fliped").removeClass("card");
+    },function(){
+        $(".fliped").addClass("card").removeClass("fliped");
+    });
+});
+
+</script>
+
+</html>

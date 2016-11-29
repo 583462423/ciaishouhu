@@ -1,0 +1,51 @@
+.mainbody{
+	background-image: url(../../Img/Teach/bg.png);
+	background-size: 100%;
+}
+
+.showdes{
+	height:200px;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(0,0,0,1);
+	padding:20px;
+	color:white;
+}
+
+.describ{
+	color:white;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,1);
+	padding:5px;
+	margin-bottom: 30px;
+}
+
+
+
+.cin{
+	width:548px;
+	margin:20px auto;
+	background-image: url(../../Img/Teach/bg_green.png);
+
+	padding: 20px;
+}
+
+.age{
+	width:506px;
+	display: inline;
+}
+
+.address{
+	display: inline;
+}
+.province{
+	width:150px;
+}
+
+.country{
+	width:150px;
+}
+
+.village{
+	width:229px;
+}

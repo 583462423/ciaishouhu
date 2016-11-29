@@ -1,0 +1,21 @@
+body,html{
+	margin:0px;
+	padding:0px;
+    font-family: '微软雅黑';
+}
+
+.navbar{
+	font-size: 17px;
+}
+
+.navbar a{
+	color:red;
+}
+
+.navbar a:hover{
+	color:black;
+}
+
+.right-nav{
+	float:right;
+}

@@ -1,0 +1,808 @@
+[ 2016-05-20T14:38:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013950s ]
+
+[ 2016-05-20T14:38:57+08:00 ] 127.0.0.1 /index.php/Home/index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104141s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2016-05-20T14:38:59+08:00 ] 127.0.0.1 /index.php/Home/Star/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `cww_star` [ RunTime:0.0096s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\StarController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_star` ORDER BY uploaddate DESC LIMIT 0,3   [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_star` LIMIT 1   [ RunTime:0.0080s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2016-05-20T14:39:01+08:00 ] 127.0.0.1 /index.php/Home/Forum/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0153s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 23 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0145s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2016-05-20T14:39:03+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 23 )  [ RunTime:0.0145s ]
+SQL: UPDATE `cww_forum` SET `subject`='社区畅聊',`title`='瓷娃娃怀孕你们怎么看？',`content`='89厘米的瓷娃娃怀孕了~~这是好事还是悲剧呢？遗传几率非常大的成骨罕见病，要不要不生孩子呢？你们怎么看？',`autherid`='glj31415926540',`replynum`='2',`senddate`='2016-05-07 23:19:08',`lastdate`='2016-05-08 00:09:12',`viewnum`='35' WHERE `id` = 23 [ RunTime:0.0142s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 23 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 23 ) LIMIT 1   [ RunTime:0.0138s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-05-20T14:39:07+08:00 ] 127.0.0.1 /index.php/Home/Manager/managerLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000627s ]
+
+[ 2016-05-20T14:39:11+08:00 ] 127.0.0.1 /index.php/Home/Manager/testLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `cww_manager` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `cww_manager` WHERE ( username='qxg_manager' ) LIMIT 1   [ RunTime:0.0085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2016-05-20T14:39:11+08:00 ] 127.0.0.1 /index.php/Home/Manager/manager
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-05-20T14:39:15+08:00 ] 127.0.0.1 /index.php/Home/Manager/forumMan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0100s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ManagerController.class.php 第 374 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0094s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0088s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-05-20T14:39:19+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 21 )  [ RunTime:0.0176s ]
+SQL: UPDATE `cww_forum` SET `subject`='心情分享',`title`='家里下雨了，雨好大啊，你们喜欢下雨天么？',`content`='RT',`autherid`='q123456',`replynum`='1',`senddate`='2016-05-07 19:43:36',`lastdate`='2016-05-07 23:16:32',`viewnum`='23' WHERE `id` = 21 [ RunTime:0.0153s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 21 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 21 ) LIMIT 1   [ RunTime:0.0142s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-05-20T14:39:19+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 21 )  [ RunTime:0.0080s ]
+SQL: UPDATE `cww_forum` SET `subject`='心情分享',`title`='家里下雨了，雨好大啊，你们喜欢下雨天么？',`content`='RT',`autherid`='q123456',`replynum`='1',`senddate`='2016-05-07 19:43:36',`lastdate`='2016-05-07 23:16:32',`viewnum`='24' WHERE `id` = 21 [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 21 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 21 ) LIMIT 1   [ RunTime:0.0093s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2016-05-20T14:39:29+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 21 )  [ RunTime:0.0085s ]
+SQL: UPDATE `cww_forum` SET `subject`='心情分享',`title`='家里下雨了，雨好大啊，你们喜欢下雨天么？',`content`='RT',`autherid`='q123456',`replynum`='1',`senddate`='2016-05-07 19:43:36',`lastdate`='2016-05-07 23:16:32',`viewnum`='25' WHERE `id` = 21 [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 21 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 21 ) LIMIT 1   [ RunTime:0.0077s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-05-20T14:39:33+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=21
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0084s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 21 )  [ RunTime:0.0088s ]
+SQL: UPDATE `cww_forum` SET `subject`='心情分享',`title`='家里下雨了，雨好大啊，你们喜欢下雨天么？',`content`='RT',`autherid`='q123456',`replynum`='1',`senddate`='2016-05-07 19:43:36',`lastdate`='2016-05-07 23:16:32',`viewnum`='26' WHERE `id` = 21 [ RunTime:0.0078s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 21 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 21 ) LIMIT 1   [ RunTime:0.0083s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-05-20T17:25:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-05-20T17:25:29+08:00 ] 127.0.0.1 /index.php/Home/index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-05-20T17:25:31+08:00 ] 127.0.0.1 /index.php/Home/Star/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `cww_star` [ RunTime:0.0143s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\StarController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_star` ORDER BY uploaddate DESC LIMIT 0,3   [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_star` LIMIT 1   [ RunTime:0.0165s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2016-05-20T17:25:32+08:00 ] 127.0.0.1 /index.php/Home/Forum/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0142s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 23 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0119s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-05-20T17:25:37+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 22 )  [ RunTime:0.0084s ]
+SQL: UPDATE `cww_forum` SET `subject`='心情分享',`title`='找到个工作，三级腿部肢体残疾，',`content`='找到个工作，三级腿部肢体残疾，男，25，未婚。谁有门路，求指教',`autherid`='5542665',`replynum`='1',`senddate`='2016-05-07 23:18:45',`lastdate`='2016-05-07 23:22:12',`viewnum`='17' WHERE `id` = 22 [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 22 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 22 ) LIMIT 1   [ RunTime:0.0078s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-05-20T17:25:44+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0162s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 25 )  [ RunTime:0.0187s ]
+SQL: UPDATE `cww_forum` SET `subject`='社区畅聊',`title`='我可不可以不坚强。',`content`='人人都说我很乐观，很坚强。可是只有我自己知道我只是不能不坚强，那佯装的坚强只是我保护自己的方法，因为我和别人不一样，因为现在的我无法改变任何事情，我只有被动的生活着，只有被动的忍受别人的眼光。我现在能做的只有当做没看到、没听到，这样才能使自己不受伤害。我想要放弃，这样我才能解脱。我真的很累，我怕自己坚持不下去，我想要卸掉我的伪装。',`autherid`='5542665',`replynum`='1',`senddate`='2016-05-07 23:20:28',`lastdate`='2016-05-07 23:20:54',`viewnum`='13' WHERE `id` = 25 [ RunTime:0.0174s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 25 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 25 ) LIMIT 1   [ RunTime:0.0159s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2016-05-20T17:25:54+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2016-05-20T17:26:00+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000435s ]
+
+[ 2016-05-20T17:27:01+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2016-05-20T17:27:03+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2016-05-20T17:27:10+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-05-20T17:27:41+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2016-05-20T17:27:44+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-05-20T17:27:54+08:00 ] 127.0.0.1 /index.php/Home/Teach/service.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2016-05-20T17:28:02+08:00 ] 127.0.0.1 /index.php/Home/Teach/smallcourse.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `cww_course` [ RunTime:0.0130s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\TeachController.class.php 第 9 行.
+SQL: SELECT * FROM `cww_course` WHERE ( edulevel = '小学' ) ORDER BY subject LIMIT 0,8   [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_course` WHERE ( edulevel = '小学' ) LIMIT 1   [ RunTime:0.0091s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-05-20T17:28:05+08:00 ] 127.0.0.1 /index.php/Home/Star/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `cww_star` [ RunTime:0.0170s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\StarController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_star` ORDER BY uploaddate DESC LIMIT 0,3   [ RunTime:0.0159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_star` LIMIT 1   [ RunTime:0.0173s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2016-05-20T17:28:12+08:00 ] 127.0.0.1 /index.php/Home/Forum/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0153s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 23 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0134s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-05-20T17:28:15+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0120s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0113s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2016-05-20T17:28:20+08:00 ] 127.0.0.1 /index.php/Home/Picture/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `cww_pictures` [ RunTime:0.0182s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\PictureController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_pictures` ORDER BY uploaddate DESC LIMIT 0,8   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_pictures` LIMIT 1   [ RunTime:0.0179s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2016-05-20T17:28:24+08:00 ] 127.0.0.1 /index.php/Home/Shop/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `cww_goods` [ RunTime:0.0203s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ShopController.class.php 第 27 行.
+SQL: SELECT * FROM `cww_goods` ORDER BY goodsTime LIMIT 0,8   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_goods` WHERE ( goodsCheck = '1' ) LIMIT 1   [ RunTime:0.0174s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2016-05-20T17:28:29+08:00 ] 127.0.0.1 /index.php/Home/Picture/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `cww_pictures` [ RunTime:0.0147s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\PictureController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_pictures` ORDER BY uploaddate DESC LIMIT 0,8   [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_pictures` LIMIT 1   [ RunTime:0.0154s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-05-20T23:57:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013203s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011262s ]
+

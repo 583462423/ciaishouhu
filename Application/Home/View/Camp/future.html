@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>瓷爱天使守护团</title>
+  
+  <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/Camp/index.css" rel="stylesheet">	
+  <link href="__PUBLIC__/Css/footer.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/base.css" rel="stylesheet">
+</head>
+
+<body>
+
+<include file="./Public/Html/head.html" />
+
+    <div class="container">
+
+        <div class="des_head">
+            <h2 style="color:red">预期活动</h2>
+            <p style="font-size:20px;float:left"><strong>REVIEW</strong></p><div style="background-color: black;width:40px;height:16px;display: inline-block;margin-top: 6px;"></div>
+        </div>
+        <hr>
+
+        <div class="des">
+            <volist name="list" id="vo" empty="暂时没有数据" >
+                <div class="info">
+                        <div class="name">{$vo.name}</div>
+                        <div class="campdes">{$vo.des}</div>
+                        <img src="__PUBLIC__/campimgs/{$vo.savename}" style="width: 100%;border-radius: 10px;" />
+                </div>
+                <hr>   
+            </volist>
+            <div style="text-align: center;">{$page}</div>
+        </div>
+    </div>
+
+    <include file="./Public/Html/footer.html" />
+
+
+
+	<script src="__PUBLIC__/Js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
+	<script src="__PUBLIC__/Js/bstraplang/zh_CN.js"></script>
+</body>
+</html>

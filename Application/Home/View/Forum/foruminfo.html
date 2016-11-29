@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="renderer" content="webkit">
+    <title>瓷爱天使守护团</title>
+
+    <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/Index/main.css" rel="stylesheet">	
+    <link href="__PUBLIC__/Css/footer.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/Forum/index.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/bootstrapValidator.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Editor/themes/default/default.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Editor/plugins/code/prettify.css" />
+</head>
+
+<body style="background-color: #ccc;">
+<volist name="forumlist" id="forum">
+<form class="form-horizontal send_form" id="sendForm" role="form" action="{:U('Home/Forum/reply')}?id={$forum.id}">
+</volist>
+
+  <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+        <p><b>请输入回复内容</b></p>
+        </div>
+          <div class="modal-body forum_body">
+         
+          <div class="form-group" style="width:100%">
+            <p><b>内容</b></p>
+            <textarea id="" class="form-control" raw="8" name="content" style="height:100px;resize: none;"></textarea>
+          </div>
+
+          <div class="word_surplus"></div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default close_btn" data-dismiss="modal">关闭</button>
+          <button type="submit" class="btn btn-primary send">发送</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+    <include file="./Public/Html/head.html" />
+    <div class="container">
+      <div class="mainforum row">
+        <div class="left col-md-8">
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="{:U('Home/Forum/index')}">首页</a></li>
+                    <li><a href="{:U('Home/Forum/recommend')}">推荐</a></li>
+                    <li><a href="{:U('Home/Forum/hot')}">热门</a></li>
+                </ul>
+
+                <button class="post">回复</button>
+            </div>
+            <div class="reply_main">
+                <volist name="forumlist" id="forum">
+                  <div class="main_info">
+                    <a style="color:white;background: #F44336;border-radius: 2px;padding:2px;">{$forum.subject}</a>
+                    <p style="border-bottom: 1px solid gray;"><b style="font-size: 25px;">{$forum.title} </b><span style="float:right;">作者:{$forum.autherid}</span></p>
+                    <p>{$forum.content}</p>
+                    <span style="float:right;color:#ccc;font-size: 12px">{$forum.senddate}</span>
+    
+                  </div>
+                </volist>
+                <volist name="replylist" id="vo" key="i">
+                  <div class="main_info">
+                    <div style="border-bottom: 1px solid #ccc;">
+                        <a style="color:black"><b>{$vo.autherid}</b></a> <p style="float:right">{$vo.floor}楼</p>
+                    </div>
+                    <p style="padding-top:20px">{$vo.content}</p> 
+                    <a class="" href="{:U('Home/Forum/rtr')}?forumid={$vo.forumid}&floor={$vo.floor}&toAuther={$vo.autherid}" style="float:right">回复</a>
+                    <p style="font-size: 12px;color: #ccc;">{$vo.replydate}</p>
+                    <hr>
+                    <volist name="vo['rtrlist']" id="item">
+                        <div class="rtr" style="border-bottom: 1px solid #ddd;margin-top: 10px;margin-left: 50px">
+                            <p><span class="auther"><b>{$item.autherid}</b></span> &nbsp回复 &nbsp<span><b>{$item.toauther}:</b></span>
+                            <span>{$item.content}</span></p>
+                            <a class="" href="{:U('Home/Forum/rtr')}?forumid={$vo.forumid}&floor={$vo.floor}&toAuther={$item.autherid}" style="float:right">回复</a>
+
+                            <p style="font-size: 12px;color: #ccc;">{$item.date}</p>
+                        </div>
+                  </volist>
+                  </div>
+                    
+                </volist>
+              <div style="text-align: center;">{$pageshow}</div>
+            </div>
+        </div>
+        <div class="right col-md-3">
+            <div class="ads">
+              <h4><b>瓷爱吉祥物</b></h4>
+                <img src="__PUBLIC__/Img/cixiaoai.png" style="width:100%;"/>
+            </div>
+        </div>
+      </div>
+    </div>
+    <include file="./Public/Html/footer.html" />
+
+  	<script src="__PUBLIC__/Js/jquery.min.js"></script>
+  	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/Js/bstraplang/zh_CN.js"></script>
+    <script src="__PUBLIC__/Js/bootstrapValidator.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/Editor/kindeditor.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/Editor/lang/zh_CN.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/Editor/plugins/code/prettify.js"></script>
+  	<script type="text/javascript">
+
+     // KindEditor.ready(function(K) {
+     //            var editor = K.create('#editor_id',{
+     //              cssPath : '__PUBLIC__/Editor/plugins/code/prettify.css',
+     //              width:"100%",
+     //              height:'200px',
+     //              items:[
+     //                   'emoticons'
+     //                  ],
+     //              afterChange:function() {
+     //                 $('.word_count1').html(this.count()); //字数统计包含HTML代码
+     //                 $('.word_count2').html(this.count('text'));  //字数统计包含纯文本、IMG、EMBED，不包含换行符，IMG和EMBED算一个文字
+     //                 var limitNum = 100;  //设定限制字数
+     //                 var pattern = '还可以输入' + limitNum + '字'; 
+     //                 $('.word_surplus').html(pattern); //输入显示
+     //                 if(this.count('text') > limitNum) {
+
+     //                  $('button.send').addClass("disabled");
+     //                  pattern = ('字数超过限制，请适当删除部分内容');
+     //                  //超过字数限制自动截取
+     //                  var strValue = editor.text();
+     //                  strValue = strValue.substring(0,limitNum);
+     //                  editor.text(strValue);  
+     //                  } else {
+
+     //                  //计算剩余字数
+     //                  var result = limitNum - this.count('text'); 
+     //                  pattern = '还可以输入' +  result + '字'; 
+     //                  }
+
+     //                  $('.word_surplus').html(pattern); //输入显示
+     //                 ////////
+     //                } 
+                  
+
+     //                  /*'preview', 
+     //                  'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+     //                  'justifyfull',   'indent', 'outdent', 
+     //                  '|', 'fullscreen', 'image', 'multiimage','/',
+     //                  'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+     //                  'italic', 'underline',  'lineheight',  '|',  
+     //                 'hr', 'emoticons', 'baidumap'*/
+     //            });
+     //            prettyPrint();
+     //  });
+
+     $(document).ready(function() {
+
+
+        $('button.post').click(function(){
+            $('#myModal').modal({
+              show:true,
+              keyboard:false,
+              backdrop:'static'
+            });
+        });
+
+
+        $('#sendForm')
+            .bootstrapValidator({
+                    live:'disabled',  
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    reply: {
+                        message: '请输入回复内容',
+                            threshold: 6,
+                        validators: {
+                            notEmpty: {
+                                message: '请输入回复内容'
+                            },
+                            stringLength: {
+                                max: 500,
+                                message: '回复内容最多500字，您的内容过长'
+                            }
+                        }
+                  },
+                  content:{
+                    message: '请输入内容',
+                            threshold: 6,
+                        validators: {
+                            notEmpty: {
+                                message: '请输入内容'
+                            },
+                            stringLength: {
+                                max: 500,
+                                message: '内容超过500字，过长，请修改'
+                            }
+                        }
+                  }
+              }
+          })
+          .on('success.form.bv', function(e) {
+              // Prevent form submission
+              e.preventDefault();
+              $('button.close_btn').addClass('disabled');
+              $('button.send').addClass('disabled');
+              // Get the form instance
+              var $form = $(e.target);
+              // Get the BootstrapValidator instance
+              var bv = $form.data('bootstrapValidator');
+              // Use Ajax to submit form data
+
+              $.post($form.attr('action'), $form.serialize(), function(result) {
+                  if(result == 1){
+                      
+                      $('.word_surplus').html('回复成功！');
+                      setTimeout(function(){
+                        $('#myModal').modal({
+                        show:false,
+                      });
+                      window.location.href="";
+                      },500);        
+                  }else if(result == 2)
+                  {
+                    alert('请先登录！');
+                    window.location.href="/index.php/Home/Login/login.html";
+                  }
+                  else{
+                      $('button.close_btn').removeClass('disabled');
+                      $('button.send').removeClass('disabled');
+                      alert(result);
+                      
+                  }
+              });
+          });
+     });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2216 @@
+[ 2016-05-12T15:38:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.044314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044915s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018598s ]
+
+[ 2016-05-12T15:38:33+08:00 ] 127.0.0.1 /index.php/Home/index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001418s ]
+
+[ 2016-05-12T15:38:35+08:00 ] 127.0.0.1 /index.php/Home/Picture/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `cww_pictures` [ RunTime:0.0221s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\PictureController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_pictures` ORDER BY uploaddate DESC LIMIT 0,8   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_pictures` LIMIT 1   [ RunTime:0.0204s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000687s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002339s ]
+
+[ 2016-05-12T15:38:38+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0149s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0146s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033317s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2016-05-12T15:40:45+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0207s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0223s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0199s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002049s ]
+
+[ 2016-05-12T15:40:51+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0200s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0157s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0149s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001770s ]
+
+[ 2016-05-12T15:41:04+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000496s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002918s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0212s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0203s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2016-05-12T15:41:14+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0221s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0239s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000389s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000736s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2016-05-12T15:41:22+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0143s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0135s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001747s ]
+
+[ 2016-05-12T15:41:32+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0206s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0198s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002032s ]
+
+[ 2016-05-12T15:41:39+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0249s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0201s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038642s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002099s ]
+
+[ 2016-05-12T15:41:49+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0146s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002242s ]
+
+[ 2016-05-12T15:41:59+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0149s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0153s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002436s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2016-05-12T15:42:19+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0223s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0211s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001873s ]
+
+[ 2016-05-12T15:42:28+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0197s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0190s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000611s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003232s ]
+
+[ 2016-05-12T15:42:36+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0155s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0154s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001938s ]
+
+[ 2016-05-12T15:42:43+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0178s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001126s ]
+
+[ 2016-05-12T15:42:52+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0145s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0145s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000420s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000960s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2016-05-12T15:43:06+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0156s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000643s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2016-05-12T15:43:10+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0218s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0214s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000412s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000957s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001839s ]
+
+[ 2016-05-12T15:43:14+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0148s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0140s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001564s ]
+
+[ 2016-05-12T15:43:18+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0215s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0199s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0196s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000599s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001776s ]
+
+[ 2016-05-12T15:44:09+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0206s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0200s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2016-05-12T15:44:15+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0139s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0132s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2016-05-12T15:44:21+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0219s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0208s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000607s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002844s ]
+
+[ 2016-05-12T15:44:26+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0155s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0148s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000260s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000594s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001817s ]
+
+[ 2016-05-12T15:44:32+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0215s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0205s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0221s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000609s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001699s ]
+
+[ 2016-05-12T15:44:39+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0224s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0238s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000456s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000873s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2016-05-12T15:44:53+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0188s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0203s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000434s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001181s ]
+
+[ 2016-05-12T15:44:59+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0165s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0235s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2016-05-12T15:45:13+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0174s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0157s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0144s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001618s ]
+
+[ 2016-05-12T15:45:17+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0148s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0139s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000601s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002091s ]
+
+[ 2016-05-12T15:45:22+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0212s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0216s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000431s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000787s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001911s ]
+
+[ 2016-05-12T15:45:39+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0156s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0147s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002207s ]
+
+[ 2016-05-12T15:45:48+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000809s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0248s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0215s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0225s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000765s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2016-05-12T15:45:53+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001260s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0230s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0210s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000684s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001846s ]
+
+[ 2016-05-12T15:45:57+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0172s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0157s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0153s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000698s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001929s ]
+
+[ 2016-05-12T15:46:04+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004598s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0159s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0157s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001856s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2016-05-12T15:46:08+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0212s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0202s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002074s ]
+
+[ 2016-05-12T15:46:14+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0155s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0146s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2016-05-12T15:46:26+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0145s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0141s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-05-12T15:46:51+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0215s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0209s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0210s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001972s ]
+
+[ 2016-05-12T15:46:51+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0155s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0167s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2016-05-12T15:46:51+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0205s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0196s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2016-05-12T15:46:52+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0155s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0149s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2016-05-12T15:48:37+08:00 ] 127.0.0.1 /index.php/Home/Index/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-05-12T15:48:44+08:00 ] 127.0.0.1 /index.php/Home/Teach/smallcourse.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SHOW COLUMNS FROM `cww_course` [ RunTime:0.0253s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\TeachController.class.php 第 9 行.
+SQL: SELECT * FROM `cww_course` WHERE ( edulevel = '小学' ) ORDER BY subject LIMIT 0,8   [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_course` WHERE ( edulevel = '小学' ) LIMIT 1   [ RunTime:0.0199s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000613s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002539s ]
+
+[ 2016-05-12T15:48:46+08:00 ] 127.0.0.1 /index.php/Home/Teach/smallcourse/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `cww_course` [ RunTime:0.0209s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\TeachController.class.php 第 9 行.
+SQL: SELECT * FROM `cww_course` WHERE ( edulevel = '小学' ) ORDER BY subject LIMIT 8,8   [ RunTime:0.0206s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_course` WHERE ( edulevel = '小学' ) LIMIT 1   [ RunTime:0.0203s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2016-05-12T15:48:48+08:00 ] 127.0.0.1 /index.php/Home/Forum/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0157s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 23 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0154s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2016-05-12T15:48:50+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 26 )  [ RunTime:0.0150s ]
+SQL: UPDATE `cww_forum` SET `subject`='社区畅聊',`title`='好久没和哥哥姐姐们聊天了',`content`='想找个人聊天，有人么',`autherid`='q123456',`replynum`='0',`senddate`='2016-05-11 00:03:48',`lastdate`='2016-05-11 00:03:48',`viewnum`='9' WHERE `id` = 26 [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 26 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 26 ) LIMIT 1   [ RunTime:0.0148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003172s ]
+
+[ 2016-05-12T15:48:53+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 23 )  [ RunTime:0.0150s ]
+SQL: UPDATE `cww_forum` SET `subject`='社区畅聊',`title`='瓷娃娃怀孕你们怎么看？',`content`='89厘米的瓷娃娃怀孕了~~这是好事还是悲剧呢？遗传几率非常大的成骨罕见病，要不要不生孩子呢？你们怎么看？',`autherid`='glj31415926540',`replynum`='2',`senddate`='2016-05-07 23:19:08',`lastdate`='2016-05-08 00:09:12',`viewnum`='26' WHERE `id` = 23 [ RunTime:0.0149s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 23 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 23 ) LIMIT 1   [ RunTime:0.0152s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2016-05-12T15:48:58+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0202s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 24 )  [ RunTime:0.0270s ]
+SQL: UPDATE `cww_forum` SET `subject`='你问我答',`title`='谁愿意和我在一起',`content`='我想去流浪街头当歌手 你愿意陪伴
+吗？真心话如果愿意可以打电话给我 159503902想知道下面的吗可以来找我要',`autherid`='5542665',`replynum`='2',`senddate`='2016-05-07 23:19:27',`lastdate`='2016-05-07 23:25:00',`viewnum`='16' WHERE `id` = 24 [ RunTime:0.0291s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 24 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0228s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 24 ) LIMIT 1   [ RunTime:0.0273s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-05-12T21:05:16+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014085s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: php_network_getaddresses: getaddrinfo failed: ��֪��������������  D:\Software\wamp\www\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+NOTIC: [2] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] php_network_getaddresses: getaddrinfo failed: ��֪��������������  (trying to connect via tcp://qdm117251110.my3w.com:3306) D:\Software\wamp\www\ThinkPHP\Library\Think\Db\Driver.class.php 第 103 行.
+ERR: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: ��֪�������������� 
+
+[ 2016-05-12T21:06:02+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 24 )  [ RunTime:0.0256s ]
+SQL: UPDATE `cww_forum` SET `subject`='你问我答',`title`='谁愿意和我在一起',`content`='我想去流浪街头当歌手 你愿意陪伴
+吗？真心话如果愿意可以打电话给我 159503902想知道下面的吗可以来找我要',`autherid`='5542665',`replynum`='2',`senddate`='2016-05-07 23:19:27',`lastdate`='2016-05-07 23:25:00',`viewnum`='17' WHERE `id` = 24 [ RunTime:0.0257s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 24 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 24 ) LIMIT 1   [ RunTime:0.0247s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.169991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.028610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.028738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025762s ]
+
+[ 2016-05-12T21:06:13+08:00 ] 127.0.0.1 /index.php/Home/Forum/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000618s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0334s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 23 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0228s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-05-12T21:06:15+08:00 ] 127.0.0.1 /index.php/Home/Forum/recommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0250s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 156 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY replynum DESC LIMIT 0,9   [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.2503s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-05-12T21:06:16+08:00 ] 127.0.0.1 /index.php/Home/Forum/hot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0199s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 184 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY viewnum DESC LIMIT 0,9   [ RunTime:0.0188s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0180s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001087s ]
+
+[ 2016-05-12T21:06:17+08:00 ] 127.0.0.1 /index.php/Home/Forum/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0199s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 23 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0181s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-05-12T21:08:41+08:00 ] 127.0.0.1 /index.php/Home/Forum/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0194s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 23 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY lastdate DESC LIMIT 0,9   [ RunTime:0.0193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0182s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000819s ]
+
+[ 2016-05-12T21:08:42+08:00 ] 127.0.0.1 /index.php/Home/Forum/hot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0256s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 184 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY viewnum DESC LIMIT 0,9   [ RunTime:0.0241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0239s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-05-12T21:09:29+08:00 ] 127.0.0.1 /index.php/Home/Forum/hot.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0237s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 184 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY viewnum DESC LIMIT 0,9   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.2494s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000969s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-05-12T21:09:30+08:00 ] 127.0.0.1 /index.php/Home/Forum/recommend.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0187s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 156 行.
+SQL: SELECT * FROM `cww_forum` ORDER BY replynum DESC LIMIT 0,9   [ RunTime:0.0186s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_forum` LIMIT 1   [ RunTime:0.0180s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-05-12T21:09:46+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0243s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 23 )  [ RunTime:0.2486s ]
+SQL: UPDATE `cww_forum` SET `subject`='社区畅聊',`title`='瓷娃娃怀孕你们怎么看？',`content`='89厘米的瓷娃娃怀孕了~~这是好事还是悲剧呢？遗传几率非常大的成骨罕见病，要不要不生孩子呢？你们怎么看？',`autherid`='glj31415926540',`replynum`='2',`senddate`='2016-05-07 23:19:08',`lastdate`='2016-05-08 00:09:12',`viewnum`='27' WHERE `id` = 23 [ RunTime:0.0253s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 23 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 23 ) LIMIT 1   [ RunTime:0.0230s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029359s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2016-05-12T21:11:08+08:00 ] 127.0.0.1 /index.php/Home/Forum/foruminfo.html?id=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\ForumController.class.php 第 106 行.
+SQL: SHOW COLUMNS FROM `cww_forum` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `cww_reply` [ RunTime:0.0256s ]
+SQL: SELECT * FROM `cww_forum` WHERE ( id = 23 )  [ RunTime:0.0255s ]
+SQL: UPDATE `cww_forum` SET `subject`='社区畅聊',`title`='瓷娃娃怀孕你们怎么看？',`content`='89厘米的瓷娃娃怀孕了~~这是好事还是悲剧呢？遗传几率非常大的成骨罕见病，要不要不生孩子呢？你们怎么看？',`autherid`='glj31415926540',`replynum`='2',`senddate`='2016-05-07 23:19:08',`lastdate`='2016-05-08 00:09:12',`viewnum`='28' WHERE `id` = 23 [ RunTime:0.0239s ]
+SQL: SELECT * FROM `cww_reply` WHERE ( forumid = 23 ) ORDER BY floor LIMIT 0,9   [ RunTime:0.0254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_reply` WHERE ( forumid = 23 ) LIMIT 1   [ RunTime:0.0258s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-05-12T21:12:32+08:00 ] 127.0.0.1 /index.php/Home/Picture/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+SQL: SHOW COLUMNS FROM `cww_pictures` [ RunTime:0.0184s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\PictureController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_pictures` ORDER BY uploaddate DESC LIMIT 0,8   [ RunTime:0.0186s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_pictures` LIMIT 1   [ RunTime:0.0181s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001064s ]
+
+[ 2016-05-12T21:12:34+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0257s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0244s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2016-05-12T21:13:34+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0261s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0255s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-05-12T21:14:37+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0188s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0230s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2016-05-12T21:14:54+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.2360s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0184s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0179s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2016-05-12T21:15:02+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0253s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0237s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2016-05-12T21:15:34+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0251s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0240s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0247s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001116s ]
+
+[ 2016-05-12T21:15:48+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0193s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0199s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0181s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-05-12T21:15:52+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0200s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0198s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0180s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001481s ]
+
+[ 2016-05-12T21:16:18+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0225s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0185s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2016-05-12T21:16:26+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0199s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0174s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2016-05-12T21:16:37+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0261s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0246s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023258s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001131s ]
+
+[ 2016-05-12T21:17:07+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0244s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0235s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0240s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000424s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000837s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2016-05-12T21:17:15+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0187s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0164s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-05-12T21:17:20+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0233s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0244s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0223s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000851s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2016-05-12T21:17:32+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0199s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0233s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0194s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2016-05-12T21:18:13+08:00 ] 127.0.0.1 /index.php/Home/Camp/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0221s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 26 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=1 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0177s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2016-05-12T21:18:29+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0268s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0236s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+
+[ 2016-05-12T21:19:13+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0204s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0177s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0187s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000926s ]
+
+[ 2016-05-12T21:19:26+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0254s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0242s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0233s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-05-12T21:23:51+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0239s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0225s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0228s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2016-05-12T21:24:31+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0179s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0193s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000458s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000679s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002399s ]
+
+[ 2016-05-12T21:26:17+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0244s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0265s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0249s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2016-05-12T21:26:21+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0180s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0171s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2016-05-12T21:27:24+08:00 ] 127.0.0.1 /index.php/Home/Camp/future.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `cww_camp` [ RunTime:0.0198s ]
+NOTIC: [8] Use of undefined constant int - assumed 'int' D:\Software\wamp\www\Application\Home\Controller\CampController.class.php 第 64 行.
+SQL: SELECT DISTINCT  * FROM `cww_camp` WHERE ( type=0 ) ORDER BY uploaddate DESC LIMIT 0,5   [ RunTime:0.0219s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cww_camp` LIMIT 1   [ RunTime:0.0198s ]
+NOTIC: [8] Use of undefined constant pagination - assumed 'pagination' D:\Software\wamp\www\ThinkPHP\Library\Think\Page.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+

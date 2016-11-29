@@ -1,0 +1,123 @@
+.otherItem{
+    margin-top: 50px;
+    height:200px;
+
+}
+
+.jumLoc{
+    position: relative;
+    width:100%;
+    top:-20px;
+    height:500px;
+    box-shadow: 0px 10px 10px #111;
+    background-image: url(../../Img/Index/jump.jpg);
+    background-size: 100% 100%;
+}
+
+.jumLoc h1, .jumLoc p{
+    font-family: '微软雅黑';
+    color:white;
+    margin-left: 200px;
+}
+
+.jumLoc p{
+    font-size: 25px;
+    letter-spacing:3px;
+}
+
+.maincon{
+    margin-top:-100px;
+    background-image: url(../../Img/main.jpg);
+}
+
+
+.des{
+    background-color：#fdfdfd;
+    position: relative;
+    
+}
+
+.des:after{
+    clear:both;
+    display :block;
+    overflow: hidden;
+    content: "";
+}
+
+.des .item{
+   box-shadow: 10px 20px 80px black;
+    border-radius: 0px;
+    overflow: hidden;
+    height:200px;
+    margin-bottom: 15px;
+}
+
+
+
+.des .item a{
+    margin:0;
+    padding: 0;
+    display:block;
+    height:200px;
+    text-decoration: none;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.des .item a p{
+
+    height:200px;
+    margin:0;
+    line-height: 100px;
+    color:#fff;
+    text-align: center;
+    font-size:20px;
+    border-radius:2px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.des .item a p:first-child{
+    background-size: 100%;
+}
+
+.des .item a p:last-child{
+    background-color: rgba(0,0,0,0.3);
+    margin-top:-10px;
+    color:black;
+}
+
+.des .item a:hover p:last-child{
+    margin-top:-200px; 
+}
+
+
+.one{
+    background-image: url(../../Img/Index/ciaishangcheng.png);
+    background-size: 100% 100%;
+}
+
+.two{
+    background-image: url(../../Img/Index/mingxingluntan.jpg);
+    background-size: 100% 100%;
+}
+
+.three{
+    background-image: url(../../Img/Index/kejianjingxuan.jpg);
+    background-size: 100% 100%;
+}
+
+.four{
+    background-image: url(../../Img/Index/shangmenfuwu.jpg);
+    background-size: 100% 100%;
+}
+
+.five{
+    background-image: url(../../Img/Index/tongchenghuodong.jpg);
+    background-size: 100% 100%;
+}
+
+.six{
+    background-image: url(../../Img/Index/shequluntan.jpg);
+    background-size: 100% 100%;
+}

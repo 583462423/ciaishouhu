@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>瓷爱天使守护团</title>
+  
+  <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/Index/main.css" rel="stylesheet">	
+  <link href="__PUBLIC__/Css/footer.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/base.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/Shop/index.css" rel="stylesheet">
+</head>
+
+<body>
+
+<include file="./Public/Html/head.html" />
+
+
+    <div class="container" style="margin-top:50px;">
+        <div class="row">
+            <volist name="list" id="vo" empty="暂时没有数据" >
+                <div class="col-md-3 item">
+                    <div style="padding:10px 0">
+                            <img src="__PUBLIC__/GoodsImgs/{$vo.goodssavename}" style="width: 100%;height: 250px;">
+                            <h2 style="height:60px">{$vo.goodstitle}</h2>
+                            <div class="goodsdes">{$vo.goodsdes}</div>
+                            <div class="input-group cost col-xs-offset-1 col-xs-10">
+                              <span class="input-group-addon cost_item">价格</span>
+                              <input type="text" class="form-control cost_item" aria-label="Amount (to the nearest dollar)" value="{$vo.goodsprice}" readonly>
+                              <span class="input-group-addon cost_item">￥</span>
+                            </div>
+
+                            <div class="input-group cost" style="margin-top:10px;width: 100%">
+                                <a class="btn btn-primary btn-my" href="{:U('Home/Des/des')}?id={$vo.goodsid}" style="width: 100%">详情及购买方式</a>
+                            </div>
+                    </div>
+                </div>
+            </volist>
+            <div style="clear:both;text-align: center;position: relative;top:30px">{$page}</div>
+        </div>
+    </div>
+
+    
+
+  <include file="./Public/Html/footer.html" />
+
+	<script src="__PUBLIC__/Js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
+	<script src="__PUBLIC__/Js/bstraplang/zh_CN.js"></script>
+</body>
+</html>

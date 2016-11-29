@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<meta name="renderer" content="webkit">
+	<title>瓷爱天使守护团</title>
+  
+  <link href="__PUBLIC__/Css/bootstrap.min.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/Manager/index.css" rel="stylesheet">	
+  <link href="__PUBLIC__/Css/footer.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/base.css" rel="stylesheet">
+  <link href="__PUBLIC__/Css/bootstrapValidator.css" rel="stylesheet">
+</head>
+
+<body style="background-color: rgba(0,0,0,0.5);">
+
+
+
+<include file="./Public/Html/managerHead.html" />
+
+
+<div style="height:700px;">
+    <div class="upload">
+        <form class="form-horizontal" id="uploadForm" enctype="multipart/form-data" role="form" method="post" action="{:U('Home/Manager/upload')}">
+            <div class="form-group">
+              <label  class="col-xs-2 control-label">照片上传</label>
+              <input id="lefile" class="col-xs-2" type="file" name="starimg" style="display:none">
+              <div class="input-append col-xs-10">
+                <input id="photoCover" class="input-large" type="text" style="height:33px;border-radius:3px;margin-right: -10px;" placeholder="   仅支持JPG格式"  readonly>
+                <a class="btn btn-default" style="margin-left:0px;"onclick="$('input[id=lefile]').click();">选择文件</a>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-xs-2 control-label">姓名</label>
+              <div class="col-xs-6">
+                <input type="text" class="form-control password" placeholder="请填写正确名字哦~" name="name" style="padding-left:11px"/>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-xs-2 control-label">简介</label>
+              <div class="col-xs-10">
+                <textarea id="editor_id" class="form-control gooddes" rows="5" placeholder="1000字以内,友情提示：请在word或者txt文档中编写好的复制到此处~" name="des" style="resize: none;"></textarea>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="col-xs-offset-2 col-xs-10 loginbtn">
+                <button type="submit" class="btn btn-default" >上传</button>
+              </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+  <include file="./Public/Html/footer.html" />
+
+
+
+	<script src="__PUBLIC__/Js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Js/bootstrap.min.js"></script>
+	<script src="__PUBLIC__/Js/bstraplang/zh_CN.js"></script>
+    <script src="__PUBLIC__/Js/bootstrapValidator.js"></script>
+    <script type="text/javascript">  
+      $(document).ready(function(){
+         //begin
+         $('input[id=lefile]').change(function() {  
+            $('#photoCover').val($(this).val()); 
+          });  
+        $('#uploadForm').bootstrapValidator({
+                live:'disabled',  
+                message: 'This value is not valid',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                          name: {
+                              message: '非法名称',
+                              validators: {
+                                  notEmpty: {
+                                      message: '商品名称不能为空'
+                                  },
+                                  stringLength: {
+                                      max: 5,
+                                      message:'名称限制在5字之内'
+                                  }
+                              }
+                          },
+                          des: {
+                              validators: {
+                                  notEmpty: {
+                                      message: '不能为空'
+                                  },
+                                  stringLength:{
+                                    max:1000,
+                                    message:'亲,您已经超过了1000字~稍微留点情吧^_^'
+                                  }
+                              }
+                          }
+
+                      }
+        });
+
+
+          //end
+      });
+      
+    </script>  
+</body>
+</html>
